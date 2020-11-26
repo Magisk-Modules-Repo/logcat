@@ -1,8 +1,8 @@
 #!/system/bin/sh
 MODDIR=${0%/*}
 
-lc_ver="v17"
-lc_vercode=17
+lc_ver="v18"
+lc_vercode=18
 
 msg[0]="Now just a little more only just a little more..."
 msg[1]="It's not a right that I'm due, my duty that is must have been kept..."
@@ -35,7 +35,6 @@ touch $file
 echo "--------- beginning of head">>$file
 echo "Log Catcher by MlgmXyysd">>$file
 echo "Version: ${lc_ver} (${lc_vercode})">>$file
-echo "QQ chat group 855219808">>$file
 echo ${msg[$rand]}>>$file
 echo "--------- beginning of system info">>$file
 echo "Android version: ${android}">>$file
@@ -60,7 +59,6 @@ touch $file_err
 echo "--------- beginning of head">>$file_err
 echo "Log Catcher by MlgmXyysd">>$file_err
 echo "Version: ${lc_ver} (${lc_vercode}) (Error log)">>$file_err
-echo "QQ chat group 855219808">>$file_err
 echo ${msg[$rand_err]}>>$file_err
 echo "--------- beginning of system info">>$file_err
 echo "Android version: ${android}">>$file_err

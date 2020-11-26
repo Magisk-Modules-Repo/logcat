@@ -7,8 +7,8 @@ case "$1" in
     dura=60
     ;;
 esac
-lc_ver="v17"
-lc_vercode=17
+lc_ver="v18"
+lc_vercode=18
 msg[0]="Now just a little more only just a little more..."
 msg[1]="It's not a right that I'm due, my duty that is must have been kept..."
 msg[2]="Since one day you will disappear, I'll keep every part of you..."
@@ -35,7 +35,6 @@ mkdir -p $path
 echo "--------- beginning of head">>$file
 echo "Log Catcher by MlgmXyysd">>$file
 echo "Version: ${lc_ver} (${lc_vercode}) (Cat log)">>$file
-echo "QQ chat group 855219808">>$file
 echo ${msg[$rand]}>>$file
 echo "--------- beginning of system info">>$file
 echo "Android version: ${android}">>$file
