@@ -1,6 +1,7 @@
 # Log-Catcher
 
 Catch boot log and save to /cache/log/boot/boot-$time.log.
+
 When /cache is not exist fallback to /data/local/boot/boot-$time.log.
 
 Error or Warning only log is saved to /cache/log/boot_error/error-$time.log.
@@ -12,6 +13,7 @@ catlog [(Int)duration=60]
 ```
 
 It will save the operation log in ${duration}s to /data/local/catlog/catlog-$time-${duration}s.log.
+
 When /cache is not exist fallback to /data/local/catlog/catlog-$time-${duration}s.log.
 
 ## For module developer:
